@@ -5,5 +5,5 @@ export default defineConfig({
   build: {
     minify: false,
   },
-  plugins: [wasmPack(["../"])],
+  plugins: [wasmPack(["../../my-crate"])],
 });
