@@ -1,9 +1,10 @@
 import { defineConfig } from "vite";
 import wasmPack from "vite-plugin-wasm-pack";
+import path from "node:path";
 
 export default defineConfig({
   build: {
     minify: false,
   },
-  plugins: [wasmPack(["../../my-crate"])],
+  plugins: [wasmPack([path.resolve("../")])],
 });
